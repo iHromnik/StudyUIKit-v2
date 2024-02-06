@@ -40,6 +40,11 @@ class LoginViewController: UIViewController {
            }
     
     @IBAction func didTapButton(_ sender: UIButton) {
+//        performSegue(withIdentifier: "to_second_VC", sender: LoginViewController())
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let destinationVC = storyBoard.instantiateViewController(withIdentifier: "SecondViewController")
+        present(destinationVC, animated: true)
+        
         
     }
     

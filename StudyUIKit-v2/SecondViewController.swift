@@ -9,13 +9,22 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var labla: UILabel!
+    
+     var textForeLable: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        labla.text = textForeLable
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func dismisButton(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

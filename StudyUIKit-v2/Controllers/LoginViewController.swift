@@ -61,28 +61,28 @@ class LoginViewController: UIViewController {
         present(alert, animated: true)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      if  segue.identifier == "to_second_VC" {
-          let destination = segue.destination as! SecondViewController
-          destination.textForeLable = loginTextField.text
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//      if  segue.identifier == "to_second_VC" {
+//          let destination = segue.destination as! SecondViewController
+//          destination.textForeLable = loginTextField.text
+//        }
+//    }
     
     @IBAction func didTapButton(_ sender: UIButton) {
         
-//        performSegue(withIdentifier: "to_second_VC", sender: LoginViewController())
+        performSegue(withIdentifier: "to_second_VC", sender: LoginViewController())
         
         
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let destinationVC = storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
-        destinationVC.textForeLable = loginTextField.text
-        
-        let resalt = checkUseCredential()
-        if !resalt {
-            showAlert()
-        }
-        
-        present(destinationVC, animated: true)
+//        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+//        let destinationVC = storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+//        destinationVC.textForeLable = loginTextField.text
+//        
+//        let resalt = checkUseCredential()
+//        if !resalt {
+//            showAlert()
+//        }
+//        
+//        present(destinationVC, animated: true)
         
 //        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
 //        let destinationVC = storyBoard.instantiateViewController(withIdentifier: "SecondViewController")
@@ -91,9 +91,9 @@ class LoginViewController: UIViewController {
     
     }
     
-    @IBAction func unwindDegue(segue: UIStoryboardSegue) {
-        print("unwendSEGUE")
-    }
+//    @IBAction func unwindDegue(segue: UIStoryboardSegue) {
+//        print("unwendSEGUE")
+//    }
     
 }
 

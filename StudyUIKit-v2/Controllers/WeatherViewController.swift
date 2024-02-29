@@ -9,11 +9,16 @@ import UIKit
 
 
 
-class WeatherCollectionViewController: UICollectionViewController {
+class WeatherViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    @IBOutlet weak var weekDayPicker: DayPicker!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        collectionView.dataSource = self
+        collectionView.delegate = self
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -35,18 +40,18 @@ class WeatherCollectionViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
 
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return 20
     }
 
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
        
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? WeatherCollectionViewCell else { return UICollectionViewCell() }
     
@@ -55,6 +60,10 @@ class WeatherCollectionViewController: UICollectionViewController {
         cell.weatherImage.image = UIImage(systemName: "sun.max")
     
         return cell
+    }
+    
+    @IBAction func weekDayPickerChenched(_ sender: DayPicker) {
+        print(#function)
     }
 
     // MARK: UICollectionViewDelegate

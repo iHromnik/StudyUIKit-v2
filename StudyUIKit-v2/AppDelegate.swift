@@ -15,7 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        setupAppearence()
         return true
+    }
+    
+    func setupAppearence() {
+        let appearence = UINavigationBar.appearance()
+        appearence.barTintColor = .black
+        appearence.tintColor = .green
+        appearence.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
+        
+        let labelAppearence = UILabel.appearance(whenContainedInInstancesOf: [LoginViewController.self, WeatherViewController.self])
+        
+        labelAppearence.font = .italicSystemFont(ofSize: 16)
+        labelAppearence.textColor = .blue
     }
 
     // MARK: UISceneSession Lifecycle

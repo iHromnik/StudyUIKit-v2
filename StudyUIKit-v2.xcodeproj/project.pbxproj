@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		300036CE2B83899100249174 /* CitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300036CD2B83899100249174 /* CitiesTableViewController.swift */; };
 		300036D52B83CBF800249174 /* CitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300036D42B83CBF800249174 /* CitiesTableViewCell.swift */; };
-		3022F4C72B84D273002FCA61 /* WeatherCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022F4C62B84D273002FCA61 /* WeatherCollectionViewController.swift */; };
+		3022F4C72B84D273002FCA61 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022F4C62B84D273002FCA61 /* WeatherViewController.swift */; };
 		3022F4C92B84D461002FCA61 /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022F4C82B84D461002FCA61 /* WeatherCollectionViewCell.swift */; };
 		3022F4CD2B84DA7A002FCA61 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022F4CB2B84DA7A002FCA61 /* ExampleTableViewCell.swift */; };
 		3022F4CE2B84DA7A002FCA61 /* ExampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3022F4CC2B84DA7A002FCA61 /* ExampleTableViewCell.xib */; };
 		3022F4D02B84DACC002FCA61 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022F4CF2B84DACC002FCA61 /* SampleViewController.swift */; };
+		3052EEDD2B8E6917001D011C /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052EEDC2B8E6917001D011C /* Days.swift */; };
+		3052EEDF2B8E6BC3001D011C /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052EEDE2B8E6BC3001D011C /* DayPicker.swift */; };
+		3065D8372B8D06DF00221096 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3065D8362B8D06DF00221096 /* TestView.swift */; };
+		3065D8392B8D081E00221096 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3065D8382B8D081E00221096 /* TestViewController.swift */; };
+		3065D83C2B8D1B5300221096 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3065D83B2B8D1B5300221096 /* GradientView.swift */; };
 		3091EA6E2B7275420020A9E1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091EA6D2B7275420020A9E1 /* SecondViewController.swift */; };
 		30B71A232B726EA300DF3124 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B71A222B726EA300DF3124 /* AppDelegate.swift */; };
 		30B71A252B726EA300DF3124 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B71A242B726EA300DF3124 /* SceneDelegate.swift */; };
@@ -49,11 +54,16 @@
 /* Begin PBXFileReference section */
 		300036CD2B83899100249174 /* CitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTableViewController.swift; sourceTree = "<group>"; };
 		300036D42B83CBF800249174 /* CitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTableViewCell.swift; sourceTree = "<group>"; };
-		3022F4C62B84D273002FCA61 /* WeatherCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewController.swift; sourceTree = "<group>"; };
+		3022F4C62B84D273002FCA61 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		3022F4C82B84D461002FCA61 /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		3022F4CB2B84DA7A002FCA61 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
 		3022F4CC2B84DA7A002FCA61 /* ExampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleTableViewCell.xib; sourceTree = "<group>"; };
 		3022F4CF2B84DACC002FCA61 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		3052EEDC2B8E6917001D011C /* Days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
+		3052EEDE2B8E6BC3001D011C /* DayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPicker.swift; sourceTree = "<group>"; };
+		3065D8362B8D06DF00221096 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		3065D8382B8D081E00221096 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		3065D83B2B8D1B5300221096 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3091EA6D2B7275420020A9E1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		30B71A1F2B726EA300DF3124 /* StudyUIKit-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StudyUIKit-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B71A222B726EA300DF3124 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +128,25 @@
 			path = SampleCell;
 			sourceTree = "<group>";
 		};
+		3052EEDB2B8E68FB001D011C /* DayPicker */ = {
+			isa = PBXGroup;
+			children = (
+				3052EEDC2B8E6917001D011C /* Days.swift */,
+				3052EEDE2B8E6BC3001D011C /* DayPicker.swift */,
+			);
+			path = DayPicker;
+			sourceTree = "<group>";
+		};
+		3065D83A2B8D089F00221096 /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				3065D8362B8D06DF00221096 /* TestView.swift */,
+				3065D8382B8D081E00221096 /* TestViewController.swift */,
+				3065D83B2B8D1B5300221096 /* GradientView.swift */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
 		30B71A162B726EA300DF3124 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +170,8 @@
 		30B71A212B726EA300DF3124 /* StudyUIKit-v2 */ = {
 			isa = PBXGroup;
 			children = (
+				3052EEDB2B8E68FB001D011C /* DayPicker */,
+				3065D83A2B8D089F00221096 /* Draw */,
 				3022F4CA2B84DA49002FCA61 /* SampleCell */,
 				30B71A2E2B726EA600DF3124 /* Assets.xcassets */,
 				30B71A282B726EA300DF3124 /* Main.storyboard */,
@@ -175,7 +206,7 @@
 		30DC3C4B2B83D35700919688 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3022F4C62B84D273002FCA61 /* WeatherCollectionViewController.swift */,
+				3022F4C62B84D273002FCA61 /* WeatherViewController.swift */,
 				30B71A262B726EA300DF3124 /* LoginViewController.swift */,
 				3091EA6D2B7275420020A9E1 /* SecondViewController.swift */,
 				30DC3C482B83D24800919688 /* MyCitiesTableViewController.swift */,
@@ -316,17 +347,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3065D8372B8D06DF00221096 /* TestView.swift in Sources */,
 				30B71A2D2B726EA300DF3124 /* StudyUIKit_v2.xcdatamodeld in Sources */,
+				3052EEDF2B8E6BC3001D011C /* DayPicker.swift in Sources */,
 				30B71A272B726EA300DF3124 /* LoginViewController.swift in Sources */,
 				3022F4C92B84D461002FCA61 /* WeatherCollectionViewCell.swift in Sources */,
 				300036CE2B83899100249174 /* CitiesTableViewController.swift in Sources */,
-				3022F4C72B84D273002FCA61 /* WeatherCollectionViewController.swift in Sources */,
+				3022F4C72B84D273002FCA61 /* WeatherViewController.swift in Sources */,
 				30B71A232B726EA300DF3124 /* AppDelegate.swift in Sources */,
+				3065D83C2B8D1B5300221096 /* GradientView.swift in Sources */,
 				30DC3C4D2B83D5F300919688 /* MyCitiesTableViewCell.swift in Sources */,
 				3022F4D02B84DACC002FCA61 /* SampleViewController.swift in Sources */,
 				3091EA6E2B7275420020A9E1 /* SecondViewController.swift in Sources */,
+				3065D8392B8D081E00221096 /* TestViewController.swift in Sources */,
 				3022F4CD2B84DA7A002FCA61 /* ExampleTableViewCell.swift in Sources */,
 				30B71A252B726EA300DF3124 /* SceneDelegate.swift in Sources */,
+				3052EEDD2B8E6917001D011C /* Days.swift in Sources */,
 				30DC3C492B83D24800919688 /* MyCitiesTableViewController.swift in Sources */,
 				300036D52B83CBF800249174 /* CitiesTableViewCell.swift in Sources */,
 			);

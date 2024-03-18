@@ -16,6 +16,11 @@
 		3022F4D02B84DACC002FCA61 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022F4CF2B84DACC002FCA61 /* SampleViewController.swift */; };
 		3052EEDD2B8E6917001D011C /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052EEDC2B8E6917001D011C /* Days.swift */; };
 		3052EEDF2B8E6BC3001D011C /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052EEDE2B8E6BC3001D011C /* DayPicker.swift */; };
+		30590EC02BA8BA9000A16EC1 /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30590EBF2BA8BA9000A16EC1 /* HelloView.swift */; };
+		30590EC22BA8BAB200A16EC1 /* HelloView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30590EC12BA8BAB200A16EC1 /* HelloView.xib */; };
+		30590EC42BA8BFED00A16EC1 /* HelloViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30590EC32BA8BFED00A16EC1 /* HelloViewViewController.swift */; };
+		30590EC72BA8C6AC00A16EC1 /* CitiesXibViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30590EC52BA8C6AC00A16EC1 /* CitiesXibViewTableViewCell.swift */; };
+		30590EC82BA8C6AC00A16EC1 /* CitiesXibViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30590EC62BA8C6AC00A16EC1 /* CitiesXibViewTableViewCell.xib */; };
 		3065D8372B8D06DF00221096 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3065D8362B8D06DF00221096 /* TestView.swift */; };
 		3065D8392B8D081E00221096 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3065D8382B8D081E00221096 /* TestViewController.swift */; };
 		3065D83C2B8D1B5300221096 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3065D83B2B8D1B5300221096 /* GradientView.swift */; };
@@ -61,6 +66,11 @@
 		3022F4CF2B84DACC002FCA61 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		3052EEDC2B8E6917001D011C /* Days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
 		3052EEDE2B8E6BC3001D011C /* DayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPicker.swift; sourceTree = "<group>"; };
+		30590EBF2BA8BA9000A16EC1 /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		30590EC12BA8BAB200A16EC1 /* HelloView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelloView.xib; sourceTree = "<group>"; };
+		30590EC32BA8BFED00A16EC1 /* HelloViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewViewController.swift; sourceTree = "<group>"; };
+		30590EC52BA8C6AC00A16EC1 /* CitiesXibViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesXibViewTableViewCell.swift; sourceTree = "<group>"; };
+		30590EC62BA8C6AC00A16EC1 /* CitiesXibViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitiesXibViewTableViewCell.xib; sourceTree = "<group>"; };
 		3065D8362B8D06DF00221096 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		3065D8382B8D081E00221096 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		3065D83B2B8D1B5300221096 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -137,6 +147,18 @@
 			path = DayPicker;
 			sourceTree = "<group>";
 		};
+		30590EBE2BA8BA5400A16EC1 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				30590EBF2BA8BA9000A16EC1 /* HelloView.swift */,
+				30590EC12BA8BAB200A16EC1 /* HelloView.xib */,
+				30590EC32BA8BFED00A16EC1 /* HelloViewViewController.swift */,
+				30590EC52BA8C6AC00A16EC1 /* CitiesXibViewTableViewCell.swift */,
+				30590EC62BA8C6AC00A16EC1 /* CitiesXibViewTableViewCell.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
 		3065D83A2B8D089F00221096 /* Draw */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +192,7 @@
 		30B71A212B726EA300DF3124 /* StudyUIKit-v2 */ = {
 			isa = PBXGroup;
 			children = (
+				30590EBE2BA8BA5400A16EC1 /* XIB */,
 				3052EEDB2B8E68FB001D011C /* DayPicker */,
 				3065D83A2B8D089F00221096 /* Draw */,
 				3022F4CA2B84DA49002FCA61 /* SampleCell */,
@@ -320,9 +343,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3022F4CE2B84DA7A002FCA61 /* ExampleTableViewCell.xib in Resources */,
+				30590EC82BA8C6AC00A16EC1 /* CitiesXibViewTableViewCell.xib in Resources */,
 				30B71A322B726EA600DF3124 /* LaunchScreen.storyboard in Resources */,
 				30B71A2F2B726EA600DF3124 /* Assets.xcassets in Resources */,
 				30B71A2A2B726EA300DF3124 /* Main.storyboard in Resources */,
+				30590EC22BA8BAB200A16EC1 /* HelloView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,10 +373,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3065D8372B8D06DF00221096 /* TestView.swift in Sources */,
+				30590EC02BA8BA9000A16EC1 /* HelloView.swift in Sources */,
 				30B71A2D2B726EA300DF3124 /* StudyUIKit_v2.xcdatamodeld in Sources */,
 				3052EEDF2B8E6BC3001D011C /* DayPicker.swift in Sources */,
 				30B71A272B726EA300DF3124 /* LoginViewController.swift in Sources */,
 				3022F4C92B84D461002FCA61 /* WeatherCollectionViewCell.swift in Sources */,
+				30590EC42BA8BFED00A16EC1 /* HelloViewViewController.swift in Sources */,
 				300036CE2B83899100249174 /* CitiesTableViewController.swift in Sources */,
 				3022F4C72B84D273002FCA61 /* WeatherViewController.swift in Sources */,
 				30B71A232B726EA300DF3124 /* AppDelegate.swift in Sources */,
@@ -360,6 +387,7 @@
 				3022F4D02B84DACC002FCA61 /* SampleViewController.swift in Sources */,
 				3091EA6E2B7275420020A9E1 /* SecondViewController.swift in Sources */,
 				3065D8392B8D081E00221096 /* TestViewController.swift in Sources */,
+				30590EC72BA8C6AC00A16EC1 /* CitiesXibViewTableViewCell.swift in Sources */,
 				3022F4CD2B84DA7A002FCA61 /* ExampleTableViewCell.swift in Sources */,
 				30B71A252B726EA300DF3124 /* SceneDelegate.swift in Sources */,
 				3052EEDD2B8E6917001D011C /* Days.swift in Sources */,

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -205,7 +205,39 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2854" y="788"/>
+            <point key="canvasLocation" x="2092" y="1402"/>
+        </scene>
+        <!--Hello View View Controller-->
+        <scene sceneID="onE-19-z1G">
+            <objects>
+                <viewController id="bXi-QI-o8u" customClass="HelloViewViewController" customModule="StudyUIKit_v2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pdL-00-9jG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hh-Vq-UO0" customClass="HelloView" customModule="StudyUIKit_v2" customModuleProvider="target">
+                                <rect key="frame" x="46.666666666666657" y="276" width="300" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="7GW-Gt-Djf"/>
+                                    <constraint firstAttribute="width" constant="300" id="7th-bw-lfF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qfr-H0-jYh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7hh-Vq-UO0" firstAttribute="centerY" secondItem="pdL-00-9jG" secondAttribute="centerY" id="LD8-bx-fto"/>
+                            <constraint firstItem="7hh-Vq-UO0" firstAttribute="centerX" secondItem="pdL-00-9jG" secondAttribute="centerX" id="Uqc-IX-UTt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="helloView" destination="7hh-Vq-UO0" id="qwx-qC-cBD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0MC-cK-pPs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3298" y="1518"/>
         </scene>
         <!--My Cities Table View Controller-->
         <scene sceneID="KiH-W5-mSe">

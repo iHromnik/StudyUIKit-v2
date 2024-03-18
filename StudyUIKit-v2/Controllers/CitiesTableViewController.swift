@@ -49,6 +49,8 @@ class CitiesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.register(UINib(nibName: "CitiesXibViewTableViewCell", bundle: nil), forCellReuseIdentifier: "city")
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -76,14 +78,16 @@ class CitiesTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard  let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? CitiesTableViewCell else { return UITableViewCell()}
+        guard  let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? CitiesXibViewTableViewCell else { return UITableViewCell()}
 
         switch indexPath.section {
         case 0:
-            cell.cityLabel.text = europCities[indexPath.row]
+            cell.configure(cityName: europCities[indexPath.row])
+//            cell.cityLabel.text = europCities[indexPath.row]
             return cell
         case 1:
-            cell.cityLabel.text = asiaCities[indexPath.row]
+            cell.configure(cityName: asiaCities[indexPath.row])
+//            cell.cityLabel.text = asiaCities[indexPath.row]
             return cell
           
         default:

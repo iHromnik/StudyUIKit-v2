@@ -9,7 +9,7 @@ import UIKit
 
 class DayPicker: UIControl {
     
-   private var buttons: [UIButton] = []
+    private var buttons: [UIButton] = []
     private var stackView: UIStackView!
     var selectedDays: Days? = nil {
         didSet {
@@ -44,7 +44,7 @@ class DayPicker: UIControl {
         addSubview(stackView)
         
         stackView.axis = .horizontal
-        stackView.spacing = 8
+        stackView.spacing = 0
         stackView.alignment = .center
         stackView.distribution = .fillEqually
         
@@ -66,7 +66,15 @@ class DayPicker: UIControl {
     private func updateSelectedDay() {
         for (index, button) in buttons.enumerated() {
             guard let day = Days(rawValue: index) else {return}
+            
+//            if day == selectedDays {
+//                button.isSelected = true
+//            } else {
+//                button.isSelected = false
+//            }
+            
             button.isSelected = day == selectedDays
+
         }
     }
     

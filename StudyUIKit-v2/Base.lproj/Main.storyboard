@@ -207,21 +207,6 @@
             </objects>
             <point key="canvasLocation" x="2854" y="788"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="CTq-MX-Mos">
-            <objects>
-                <viewController id="180-Ih-pAU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jzX-d6-0Bd">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="riQ-6F-cuL"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aPV-zX-Dtt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1743" y="1613"/>
-        </scene>
         <!--My Cities Table View Controller-->
         <scene sceneID="KiH-W5-mSe">
             <objects>
@@ -282,14 +267,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7W-eV-AR5" customClass="DayPicker" customModule="StudyUIKit_v2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="393" height="20"/>
+                                <rect key="frame" x="0.0" y="44" width="393" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xFP-xR-o6n"/>
+                                </constraints>
                                 <connections>
                                     <action selector="weekDayPickerChenched:" destination="Sic-my-T3Z" eventType="valueChanged" id="VsA-F3-Bkz"/>
                                 </connections>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pcv-El-MsL">
-                                <rect key="frame" x="0.0" y="64" width="393" height="788"/>
+                                <rect key="frame" x="0.0" y="94" width="393" height="758"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="V9g-XC-iSd">
                                     <size key="itemSize" width="150" height="150"/>
@@ -354,7 +342,6 @@
                             <constraint firstItem="pcv-El-MsL" firstAttribute="leading" secondItem="jPx-Jz-beJ" secondAttribute="leading" id="d3t-lZ-Vi5"/>
                             <constraint firstItem="jPx-Jz-beJ" firstAttribute="bottom" secondItem="pcv-El-MsL" secondAttribute="bottom" id="ivj-eX-Ber"/>
                             <constraint firstItem="pcv-El-MsL" firstAttribute="top" secondItem="d7W-eV-AR5" secondAttribute="bottom" id="sZa-qf-37z"/>
-                            <constraint firstItem="pcv-El-MsL" firstAttribute="top" secondItem="jPx-Jz-beJ" secondAttribute="top" constant="20" id="vIR-QH-QGy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kkX-Li-xxR"/>

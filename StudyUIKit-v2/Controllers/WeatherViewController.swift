@@ -9,7 +9,7 @@ import UIKit
 
 
 
-class WeatherViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class WeatherViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var weekDayPicker: DayPicker!
     @IBOutlet weak var collectionView: UICollectionView!

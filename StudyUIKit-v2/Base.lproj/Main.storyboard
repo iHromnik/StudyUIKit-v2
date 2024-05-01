@@ -205,7 +205,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2092" y="1402"/>
+            <point key="canvasLocation" x="2395" y="744"/>
         </scene>
         <!--Hello View View Controller-->
         <scene sceneID="onE-19-z1G">
@@ -237,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0MC-cK-pPs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3298" y="1518"/>
+            <point key="canvasLocation" x="3439" y="744"/>
         </scene>
         <!--My Cities Table View Controller-->
         <scene sceneID="KiH-W5-mSe">
@@ -384,7 +384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z31-xP-o7r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3830" y="773"/>
+            <point key="canvasLocation" x="4644" y="394"/>
         </scene>
         <!--Cities-->
         <scene sceneID="vEd-n7-DdC">
@@ -394,32 +394,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="147" id="ngO-sZ-WhY" customClass="CitiesTableViewCell" customModule="StudyUIKit_v2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="393" height="147"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ngO-sZ-WhY" id="cXf-pB-Y9e">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="147"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TT5-nz-9Rb">
-                                            <rect key="frame" x="175.66666666666666" y="63" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="TT5-nz-9Rb" firstAttribute="centerY" secondItem="cXf-pB-Y9e" secondAttribute="centerY" id="2cc-uE-bPe"/>
-                                        <constraint firstItem="TT5-nz-9Rb" firstAttribute="centerX" secondItem="cXf-pB-Y9e" secondAttribute="centerX" id="sLW-LR-FBS"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="cityLabel" destination="TT5-nz-9Rb" id="PVn-GQ-cXT"/>
-                                    <segue destination="C0x-tm-aOI" kind="unwind" unwindAction="unwindSegue:" id="n1k-1N-3Mz"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="Mzg-31-DBN" id="Liw-pY-nkR"/>
                             <outlet property="delegate" destination="Mzg-31-DBN" id="SCj-td-Z85"/>
@@ -428,9 +402,8 @@
                     <navigationItem key="navigationItem" title="Cities" id="99X-xH-emr"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IYW-za-F3I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="C0x-tm-aOI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4697" y="5"/>
+            <point key="canvasLocation" x="4645" y="-268"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ejc-hl-RMd">

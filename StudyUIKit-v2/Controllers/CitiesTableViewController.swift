@@ -7,7 +7,7 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "city"
 
 class CitiesTableViewController: UITableViewController {
     
